@@ -1,0 +1,72 @@
+header:
+  Delimiter field: H, 2, 1, 1
+  Sender name: H, 5, 1, 1
+  Version number: H, 13, 1, 1
+  Message date/time: H, 14, 1, 1
+
+patient:
+  Sequence number: P, 2, 1, 1
+  Laboratory - Assigned patient ID: P, 4, 1, 1
+  Patient name (last): P, 6, 1, 1
+  Patient name (first): P, 6, 1, 2
+  Patient name (middle): P, 6, 1, 3
+  Patient name (suffix): P, 6, 1, 4
+  Patient name (title): P, 6, 1, 5
+  Date of birth: P, 8, 1, 1
+  Patient sex: P, 9, 1, 1
+  Patient Race-Ethnic Origin: P, 10, 1, 1
+  Address (street): P, 11, 1, 1
+  Address (city): P, 11, 1, 2
+  Address (state): P, 11, 1, 3
+  Address (zip code): P, 11, 1, 4
+  Address (country): P, 11, 1, 5
+  Patient phone number: P, 13, 1, 1
+  Admitting physician: P, 14, 1, 1
+  Patient user defined field 1: P, 15, 1, 1
+  Patient user defined field 2: P, 15, 2, 1
+  Patient user defined field 3: P, 15, 3, 1
+  Patient user defined field 4: P, 15, 4, 1
+  Patient user defined field 5: P, 15, 5, 1
+  Patient diagnosis: P, 19, 1, 1
+  Patient therapy (1-5): P, 20, 1-5,1
+  Admission date/time: P, 24, 1, 1
+  Discharge time: P, 23, 1, 2
+  Location: P, 26, 1, 1
+  Isolation status: P, 31, 1, 1
+  Hospital service: P, 33, 1, 1
+  Hospital institution: P, 34, 1, 1
+
+order:
+  Sequence number: O, 2, 1, 1
+  Accession number: O, 3, 1, 1
+  Isolate number: O, 3, 1, 2
+  Organism: O, 3, 1, 3
+  Exclude isolate from statistics: O, 3, 1, 4
+  Test ID: O, 5, 1, 4
+  Test/consumable sequence number: O, 5, 1, 5
+  Test priority: O, 6, 1, 1
+  Requested/Ordered date and time: O, 7, 1, 1
+  Collection date/time: O, 8, 1, 1
+  Collected by: O, 11, 1, 1
+  Received by: O, 11, 1, 2
+  Specimen action code: O, 12, 1, 1
+  Isolate source test (1-3): O, 14, 1-3, 1
+  Isolate source test start time (1-3): O, 14,1-3,2
+  Receipt date/time: O, 15, 1, 1
+  Specimen type: O, 16, 1, 1
+  Body site: O, 16, 1, 2
+  Ordering physician: O, 17, 1, 1
+  Ordering physician phone: O, 18, 1, 1
+  Ordering physician fax: O, 18, 1, 2
+  Ordering physician pager: O, 18, 1, 3
+  Specimen user defined field 1: O, 19, 1, 1
+  Specimen user defined field 2: O, 19, 2, 1
+  Specimen user defined field 3: O, 19, 3, 1
+  Specimen user defined field 4: O, 19, 4, 1
+  Specimen user defined field 5: O, 19, 5, 1
+  Result date/time: O, 23, 1, 1
+  Specimen reimbursement value: O, 24, 1, 1
+  Test reimbursement value: O, 24, 2, 1
+  Report type: O, 26, 1, 1
+  Location of Specimen Collection: O, 28, 1, 1
+  Nosocomial Infection flag: O, 29, 1, 1
